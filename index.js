@@ -1,10 +1,7 @@
 
 
 
-
- 
-
-    function generate() {
+function generate() {
     let value = document.getElementById("input").value;
 
     while (value > 1) {
@@ -34,4 +31,3 @@
 
     }    
 }
-
