@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(125, 195, 255, 0.616);
+}
+
+p {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+div {
+    margin: auto;
+    width: fit-content;
+    min-width: 65px;
+    min-height: 20px;
+    border:2px solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+input, button {
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+.clear {
+    
+    margin: auto;
+    margin-top: 20px;
+   
+}
