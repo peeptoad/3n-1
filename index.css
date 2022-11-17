@@ -14,11 +14,13 @@ p {
 div {
     margin: auto;
     width: fit-content;
-    min-width: 65px;
+    min-width: 85px;
     min-height: 20px;
     border:2px solid black;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    text-align: left;
+    padding: 5px;
 }
 
 input, button {
@@ -26,6 +28,7 @@ input, button {
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     font-size: 24px;
+    margin: 10px;
 }
 
 
@@ -33,3 +36,4 @@ input, button {
     margin: auto;
     margin-top: 20px;
 }
+

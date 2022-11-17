@@ -2,16 +2,11 @@
 
 
 function generate() {
-    
-    
     let value = document.getElementById("input").value;
     document.getElementById('log').innerHTML = '';
-    console.log(value)
-   
-    
+    console.log(value);
     
     while (value > 1) 
-    
        {
         if (value % 2 == 0) 
         {
@@ -22,7 +17,6 @@ function generate() {
             value = value * 3 + 1
             console.log(value)
         }
-     
         (function () {
             var old = console.log;
             var logger = document.getElementById('log');
@@ -36,8 +30,10 @@ function generate() {
               }
             }
         })();
-        
-       
-    
     }    
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }

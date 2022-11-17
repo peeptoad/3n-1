@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>3n+1</title>
 </head>
 <body>
-    <h1>3n + 1</h1>
-    <p>3n+1 also known as The Collatz conjecture is one of the 
+    <h1>3n+1 Calculator</h1>
+    <p>3n+1 also known as  <a  target="_blank" href="https://en.wikipedia.org/wiki/Collatz_conjecture">The Collatz conjecture</a>  is one of the 
         most infamous unsolved problems in mathematics.The problem is
         simple choose any positive number from 1 to &infin;. You will
         then apply two rules to the number if its odd multyply it by 3
         and add 1 if the number is even divide it by 2 and keep repeating
         these steps. The conjecture is that by applying 
-        these rules to any positive interger it will result in a 4,2,1 loop. 
-        While no one has proved the conjecture as of 2020 it has proved true 
-        for every number less than 295,147,905,179,352,825,856.
+        these rules to any positive interger it will result in a 4,2,1 loop.
+        If the conjecture is false, it can only be because there is some starting
+        number which gives rise to a sequence that does not contain 1. Such a 
+        sequence would either enter a repeating cycle that excludes 1, or increase
+        without bound. No such sequence has been found. While no one has proved the 
+        conjecture to be true or false as of 2020 it has proved true for every number
+        less than 295,147,905,179,352,825,856. Try it for yourself enter any number below 
+        and press calculate to automatically generate the outcome. 
     </p>
+
     <p>
+    </p>
+
+    <div>
         Example: 5 odd &times 3 + 1 = 16 even &divide 2 = 8 even &divide 2 = 
         4 even &divide 2 = 2 even &divide 2 = 1 odd &times 3 = 3 + 1 = 
         4 even &divide 2 = 2 even &divide 2 = 1 
-    </p>
+    </div>
+    <input id="input" type="number" placeholder="e.g. 123456789123456789 ">
     
-    <input id="input" type="number">
-    <button id="generateOutcome" onclick="generate()">Generate</button>
-    
+    <button id="generateOutcome" onclick="generate()">Calculate</button>
+    <p>Tip: Some numbers may take longer to calculate.</p>
     <h2>Result</h2> 
     <div  id="log"> </div>
+    <button onclick="topFunction()" id="myBtn">back to top </button>
     <button class="clear" onClick="window.location.reload();">Clear</button>
-    
-    
 </body>
 </html>
